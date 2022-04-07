@@ -1,3 +1,29 @@
+# 安装 redux react-redux
+
+npm i redux react-redux --save
+
+# 路由 react-router-dom@6
+
+# 配置文件
+
+# 类似 axios 的请求
+
+# 网络请求代理
+
+# scss 与 less 的引入
+
+# UI 框架
+
+# immutable
+
+# Mobx
+
+# TS
+
+# 看一个项目
+
+# React Native
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

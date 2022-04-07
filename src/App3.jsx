@@ -2,7 +2,7 @@
  * @Author: huangl
  * @Date: 2022-04-02 17:06:58
  * @LastEditors: YQL
- * @LastEditTime: 2022-04-02 17:19:30
+ * @LastEditTime: 2022-04-06 14:25:56
  * @Description: file content
  */
 import React, { Component } from 'react'
@@ -15,7 +15,9 @@ export default class App3 extends Component {
         }
         // this.addNum = this.addNum.bind(this)
     }
-    
+    componentDidMount() { 
+        console.log("挂载完成")
+    }
     render() {
         return (
         <div>
