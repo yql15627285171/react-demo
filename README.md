@@ -10,9 +10,17 @@ npm i redux react-redux --save
 
 # 网络请求代理
 
+安装 npm i http-proxy-middleware
+在 src 目录下创建 setupProxy.js
+
 # scss 与 less 的引入
 
+webpack 默认可以使用 scss 只需要执行 npm i node-sass
+引入 less npm install less-loader less --save 还要配置 webpack.config.js
+
 # UI 框架
+
+antd
 
 # immutable
 
