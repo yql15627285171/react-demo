@@ -24,6 +24,10 @@ npm i redux react-redux --save
 
 # React Native
 
+# npm run eject
+
+暴露 webpack 文件
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

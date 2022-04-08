@@ -2,11 +2,13 @@
  * @Author: huangl
  * @Date: 2022-04-07 14:21:15
  * @LastEditors: YQL
- * @LastEditTime: 2022-04-07 15:03:04
+ * @LastEditTime: 2022-04-08 11:36:28
  * @Description: 路由
  */
 import React from "react";
 import { Outlet, Link, useLocation, useNavigate } from "react-router-dom";
+// import "./App.css";
+// import { Button } from "antd";
 
 export default function App14() {
   const location = useLocation();
@@ -22,6 +24,7 @@ export default function App14() {
 
   return (
     <>
+      {/* <Button type="primary">Button</Button> */}
       <ul>
         <li>
           <Link to="/home?id=456">首页</Link>
