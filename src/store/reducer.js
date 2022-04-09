@@ -2,7 +2,7 @@
  * @Author: huangl
  * @Date: 2022-04-07 10:28:50
  * @LastEditors: YQL
- * @LastEditTime: 2022-04-08 14:54:37
+ * @LastEditTime: 2022-04-09 11:37:45
  * @Description: 创建初始状态，导出文件
  */
 const defaultState = {
@@ -13,10 +13,7 @@ const state = (state = defaultState, action) => {
     let newState = JSON.parse(JSON.stringify(state))
     switch (action.type) { 
         case "addNum":
-            setTimeout(() => {
                 newState.num += action.value;
-            }, 1000);
-            
             break;
         default:
             break;

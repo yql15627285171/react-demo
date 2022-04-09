@@ -1,12 +1,16 @@
 # 安装 redux react-redux
 
+异步操作
+
 npm i redux react-redux --save
 
 # 路由 react-router-dom@6
 
-# 配置文件
+路由拦截
 
-# 类似 axios 的请求
+# axios 的请求
+
+用法跟 vue 一致
 
 # 网络请求代理
 
@@ -35,6 +39,7 @@ antd
 # npm run eject
 
 暴露 webpack 文件
+添加 '@':path.resolve('src'),
 
 # Getting Started with Create React App
 
