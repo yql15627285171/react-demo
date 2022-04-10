@@ -7,14 +7,18 @@
  */
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import App from './App15'
+// import App from './App14'
 import Router from "./router/index.jsx"
-import store from './store'
+import {store,persistor} from './store'
+
+import { PersistGate } from 'redux-persist/integration/react';
 
 ReactDOM.render(
     <Provider store={store}>
-        <Router />
-        {/* <App /> */}
+        <PersistGate loading={null} persistor={persistor}>
+            <Router />
+        </PersistGate>
+        
     </Provider>
     // <App />
     ,

@@ -6,10 +6,30 @@
  * @Description: 入口文件
  */
 
-import reducer from "./reducer"
 
-import { createStore } from "redux"
+import { createStore ,applyMiddleware } from "redux"
+import reducers from './reducers';
+import thunk from 'redux-thunk';
 
-const store = createStore(reducer)
+// 数据出持久化
+import { persistStore, persistReducer } from 'redux-persist';
+// sessionStorage
+import storage from 'redux-persist/lib/storage/session'; // defaults to localStorage for web
+// localStorage
+// import storage from 'redux-persist/lib/storage'; // defaults to localStorage for web
 
-export default store
+// 整个reducer放入黑白名单
+const persistConfig = {
+	key: 'count',
+	storage,
+    whitelist:['count'] //黑名单blacklist
+};
+
+// 将reducer中的某个属性放入黑白名单
+
+const persistedReducer = persistReducer(persistConfig, reducers);
+// 添加中间件，处理异步
+
+export const store = createStore(persistedReducer,applyMiddleware(thunk))
+export const persistor = persistStore(store);
+
